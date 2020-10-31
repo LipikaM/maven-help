@@ -75,4 +75,11 @@ in the child POM. This can help you use unified versions for dependencies for ch
       <groupId>charlie</groupId>
       <artifactId>charlie</artifactId>
       <type>war</type> <!-- This is not a jar dependency, so we must specify type. -->
-    </dependency>```
+    </dependency>
+    <dependency>
+      <groupId>betaShared</groupId> 
+      <artifactId>betaShared</artifactId> 
+      <type>bar</type> <!-- This is not a jar dependency, so we must specify type. -->
+    </dependency>
+  </dependencies>
+</project>
