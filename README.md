@@ -1,6 +1,10 @@
 # Helpful points for easy to use Maven
 
  **`<dependency>`** vs  **`<dependency-managemant>`**
+ 
+- **`<dependencyManagement>`** allows to consolidate all dependencies (used at child pom level) used across different modules -- clarity, central dependency version management
+- **`<dependencyManagement>`** allows to easily upgrade/downgrade dependencies based on need, in other scenario this needs to be exercised at every child pom level -- consistency
+- dependencies provided in **`<dependencies>`** tag is always imported, while dependencies provided at **`<dependencyManagement>`** in parent pom will be imported only if child pom has respective entry in its **`<dependencies>`** tag.
 
 - In the parent POM, the main difference between the <dependencies> and <dependencyManagement> is 
 Artifacts specified in the **`<dependencies>`** section will ALWAYS be included as a dependency of the child module(s).
