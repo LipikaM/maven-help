@@ -1,6 +1,6 @@
 # Helpful points for easy to use Maven
 
-<dependenc> vs <dependency-managemant>
+ **`<dependency>`** vs  **`<dependency-managemant>`**
 
 In the parent POM, the main difference between the <dependencies> and <dependencyManagement> is 
 Artifacts specified in the **`<dependencies>`** section will ALWAYS be included as a dependency of the child module(s).
