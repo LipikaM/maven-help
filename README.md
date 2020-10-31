@@ -16,7 +16,7 @@ in the child POM. This can help you use unified versions for dependencies for ch
 
 
 <!-- ParentProj pom -->
-<project>
+```<project>
   <dependencyManagement>
     <dependencies>
       <dependency> <!-- not much benefit defining alpha here, as we only use in 1 child, so optional -->
@@ -71,4 +71,4 @@ in the child POM. This can help you use unified versions for dependencies for ch
       <groupId>charlie</groupId>
       <artifactId>charlie</artifactId>
       <type>war</type> <!-- This is not a jar dependency, so we must specify type. -->
-    </dependency>
+    </dependency>```
